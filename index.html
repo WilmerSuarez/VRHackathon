@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, World! - A-Frame</title>
+    <meta name="description" content="Hello, World! - A-Frame">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+<<<<<<< HEAD
+    <script src= "js/transition-component.js"></script>
+=======
+
+>>>>>>> 9d9dd0f84f6e05e934dd7b49698ba4775cc39005
+  </head>
+  <body>
+    <a-scene>
+      
+      <a-assests>
+      
+        <img id="horror" src="https://cdn.glitch.com/a3a5adc3-7637-4088-bfa6-c7d0f4d4f230%2Fsolitary-confinement-cell.jpg?1498330911727">
+      
+      </a-assests>
+      
+      <!-- Pictures -->
+      <!-- Horror -->
+      <a-box position="4.969 2.356 -9.999" depth="0.1" width="1.5" height="2.5" color="#966F33"></a-box>
+      <a-image position="4.964 2.355 -9.935" rotation="0 0 -90" width="2.3" height="1.3" src="#horror"></a-image>
+      
+      <!-- Cursor -->
+      <a-entity position="-2.652 .5 0">
+          <a-camera rotation="0 -90 0" >
+              <a-entity cursor="fuse: false"
+                        position="0 0 -1"
+                        geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                        material="color: white; shader: flat">
+              </a-entity>
+          </a-camera>
+      </a-entity>
+      
+      <!-- Camera Starting Position -->
+      <a-entity position="6 1.6 0">
+      <a-camera rotation="0 90 0" ></a-camera> 
+      </a-entity>
+      
+      <!-- Floors -->
+      <a-plane position="5 0 0" rotation="-90 0 0" width="4" height="20" color="#000000"></a-plane>
+      <a-plane position="0 0 0" rotation="-90 0 0" width="6" height="3" color="#000000"></a-plane>
+      
+      <!-- Walls -->
+      <a-plane position="6.984 1.988 0" rotation="0 -90 0" width="20" height="4" color="#ff0000"></a-plane>
+      <a-plane position="3.001 1.988 -5.754" rotation="180 -90 0" width="8.5" height="4" color="#ff0000"></a-plane>
+      <a-plane position="3.001 1.988 5.754" rotation="180 -90 0" width="8.5" height="4" color="#ff0000"></a-plane>  
+      <a-plane position="0 1.988 -1.504" rotation="0 0 0" width="6" height="4" color="#ff0000"></a-plane>
+      <a-plane position="0 1.988 1.504" rotation="0 180 0" width="6" height="4" color="#ff0000"></a-plane>
+      <a-plane position="-2.972 3 0" rotation="0 90 90" width="6" height="3" color="#000000"></a-plane>
+      <a-plane position="5.337 3 -10" rotation="0 0 90" width="6" height="5" color="#000000"></a-plane>
+      <a-plane position="4.834 3 10" rotation="0 -180 90" width="6" height="5" color="#000000"></a-plane>
+      
+      <!-- Ceilings -->
+      <a-plane position="5 3.966 0" rotation="90 0 0" width="4" height="20" color="#000000"></a-plane>
+      <a-plane position="0.015 3.964 0" rotation="90 180 180" width="6" height="3" color="#000000"></a-plane>
+  
+      <!-- Sky -->
+      <a-sky color="#ECECEC"></a-sky>
+     
+    </a-scene>
+  </body>
+</html>
