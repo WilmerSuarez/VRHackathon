@@ -13,19 +13,22 @@
       
       <a-assests>
       
-        <img id="horror" src="https://cdn.glitch.com/a3a5adc3-7637-4088-bfa6-c7d0f4d4f230%2Fsolitary-confinement-cell.jpg?1498330911727">
+        <img id="horror" src="images/solitary-confinement-cell.jpg">
       
       </a-assests>
       
       <!-- Pictures -->
       <!-- Horror -->
       <a-box position="4.969 2.356 -9.999" depth="0.1" width="1.5" height="2.5" color="#966F33"></a-box>
-      <a-image position="4.964 2.355 -9.935" rotation="0 0 -90"
+      <a-image 
+      		   position="4.964 2.355 -9.935" rotation="0 0 -90"
                width="2.3" height="1.3"
                src="#horror"
                scene-transition="rooms/horror.html"
                class="clickable">
       </a-image>
+      <!-- Relaxing -->
+      <!-- Sadness -->
       
       <!-- Cursor -->
       <a-entity position="6 1.6 0">
@@ -41,6 +44,9 @@
           </a-camera>
       </a-entity>
 
+      <a-entity 
+      	cursor position="0 0 -5">		
+      </a-entity>
       
       <!-- Floors -->
       <a-plane position="5 0 0" rotation="-90 0 0" width="4" height="20" color="#000000"></a-plane>
