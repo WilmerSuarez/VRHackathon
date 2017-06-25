@@ -22,7 +22,7 @@
       <!-- Pictures & Sound & Lighting-->
       <!-- Horror -->
       <!-- Picture -->
-      <a-box position="4.969 2.356 -9.999" depth="0.1" width="1.5" height="2.5" color="#966F33"></a-box>
+      <a-box src="images/wood.jpg" position="4.969 2.356 -9.999" depth="0.1" width="1.5" height="2.5"></a-box>
       <a-image 
       		   position="4.964 2.355 -9.935" rotation="0 0 -90"
                width="2.3" height="1.3"
@@ -32,30 +32,32 @@
       </a-image>
       
       <!-- Sound -->
-      <a-sound src="music/horror.mp3" autoplay="true" loop="true" volume=".4" position="5 1.6 -6"></a-sound>
-      <a-sound src="music/heartbeat.mp3" autoplay="true" loop="true" volume=".01" position="5 1.6 -6"></a-sound>
+      <a-sound src="music/horror.mp3" autoplay="true" loop="true" volume=".2" position="5 1.6 -8"></a-sound>
+      <a-sound src="music/heartbeat.mp3" autoplay="true" loop="true" volume=".008" position="5 1.6 -8"></a-sound>
 
       <!-- Light -->
-      <a-light intensity=".2" type="point" color="#e0e0e0" position="5 2 -8"></a-light>
 
+     <!-- <a-light intensity=".2" type="point" color="#e0e0e0" position="5 2 -8"></a-light> -->
 
       <!-- Relaxing -->
       <!-- Picture -->
-      <a-box position="-3.941 2.356 0" rotation="0 90 0" depth="0.1" width="2.65" height="2.2" color="#966F33"></a-box>
+      <a-box src="images/wood.jpg" position="-3.941 2.356 0" rotation="0 90 0" depth="0.1" width="2.65" height="2.2"></a-box>
       <a-image 
       		   position="-3.869 2.368 0" rotation="0 90 0"
                width="2.5" height="2"
                src="#relaxing"
-               scene-transition="rooms/relaxing.html"
+               scene-transition="rooms/relax.html"
                class="clickable">
       </a-image> 
       <!-- Sound -->
+      <a-sound src="music/relaxing.mp3" autoplay="true" loop="true" volume=".02" position="1 1.6 0"></a-sound>
+      <a-sound src="music/wind.mp3" autoplay="true" loop="true" volume=".05" position="1 1.6 0"></a-sound>
       <!-- Light -->
-	  <a-light type="point" color="#ffffff" position="-3 2 0"></a-light>
+	 <!-- <a-light type="point" color="#ffffff" position="-3 2 0"></a-light> -->
 
       <!-- Sadness -->
       <!-- Picture -->
-      <a-box position="4.959 2.356 9.964" rotation="0 0 0" depth="0.1" width="2.65" height="2.2" color="#966F33"></a-box>
+      <a-box src="images/wood.jpg" position="4.959 2.356 9.964" rotation="0 0 0" depth="0.1" width="2.65" height="2.2"></a-box>
       <a-image 
       		   position="4.969 2.368 9.893" rotation="0 180 0"
                width="2.5" height="2"
@@ -64,8 +66,12 @@
                class="clickable">
       </a-image> 
       <!-- Sound -->
+      <a-sound src="music/sad.mp3" autoplay="true" loop="true" volume=".006" position="5 1.6 8"></a-sound>
+      <a-sound src="music/rain.mp3" autoplay="true" loop="true" volume=".001" position="5 1.6 8"></a-sound>
+
       <!-- Light -->
-      
+      <!-- <a-light type="point" color="#ffffff" position="5 2 8"></a-light> -->
+
       <!-- Cursor -->
       <a-entity position="6 1.6 0">
           <a-camera rotation="0 90 0" >
@@ -80,27 +86,26 @@
           </a-camera>
       </a-entity>
 
-      <a-entity 
-      	cursor position="0 0 -5">		
-      </a-entity>
+      
       
       <!-- Floors -->
-      <a-plane position="5 0 0" rotation="-90 0 0" width="4" height="20" color="#000000"></a-plane>
-      <a-plane position="0 0 0" rotation="-90 0 0" width="8" height="3" color="#000000"></a-plane>
+      <a-plane position="5 0 0" rotation="-90 0 0" width="4" height="20" color="#000000" material="roughness:1"></a-plane>
+      <a-plane position="0 0 0" rotation="-90 0 0" width="8" height="3" color="#000000" material="roughness:1"></a-plane>
       
       <!-- Walls -->
-      <a-plane position="6.984 1.988 0" rotation="0 -90 0" width="20" height="4" color="#ff0000" material="roughness:1"></a-plane>
-      <a-plane position="3.001 1.988 -5.754" rotation="180 -90 0" width="8.5" height="4" color="#ff0000"></a-plane>
+      <a-plane position="6.984 1.988 -5.002" rotation="0 -90 0" width="10" height="4" material="roughness:1" color="#ff0000"></a-plane>
+      <a-plane position="6.984 1.988 5.497" rotation="0 -90 0" width="11" height="4" color="#ff0000" material="roughness:1"></a-plane>
+      <a-plane position="3.001 1.988 -5.754" rotation="180 -90 0" width="8.5" height="4" material="roughness:1" color="#ff0000"></a-plane>
       <a-plane position="3.001 1.988 5.754" rotation="180 -90 0" width="8.5" height="4" color="#ff0000" material="roughness:1"></a-plane>  
-      <a-plane position="-0.738 1.988 -1.504" rotation="0 0 0" width="7.5" height="4" color="#ff0000"></a-plane>
-      <a-plane position="-0.736 1.988 1.504" rotation="0 180 0" width="7.5" height="4" color="#ff0000"></a-plane>
-      <a-plane position="-3.993 3 0" rotation="0 90 90" width="6" height="3" color="#000000"></a-plane>
-      <a-plane position="5.337 3 -10" rotation="0 0 90" width="6" height="5" color="#000000"></a-plane>
-      <a-plane position="4.834 3 10" rotation="0 -180 90" width="6" height="5" color="#000000"></a-plane>
+      <a-plane position="-0.738 1.988 -1.504" rotation="0 0 0" width="7.5" height="4" color="#ff0000" material="roughness:1"></a-plane>
+      <a-plane position="-0.736 1.988 1.504" rotation="0 180 0" width="7.5" height="4" color="#ff0000" material="roughness:1"></a-plane>
+      <a-plane position="-3.993 3 0" rotation="0 90 90" width="6" height="3" color="#000000" material="roughness:1"></a-plane>
+      <a-plane position="5.337 3 -10" rotation="0 0 90" width="6" height="5" color="#000000" material="roughness:1"></a-plane>
+      <a-plane position="4.834 3 10" rotation="0 -180 90" width="6" height="5" color="#000000" material="roughness:1"></a-plane>
       
       <!-- Ceilings -->
-      <a-plane position="5 3.966 0" rotation="90 0 0" width="4" height="20" color="#000000"></a-plane>
-      <a-plane position="-0.260 3.964 0" rotation="90 180 180" width="7.5" height="3" color="#000000"></a-plane>
+      <a-plane position="5 3.966 0" rotation="90 0 0" width="4" height="20" color="#000000" material="roughness:1"></a-plane>
+      <a-plane position="-0.260 3.964 0" rotation="90 180 180" width="7.5" height="3" color="#000000" material="roughness:1"></a-plane>
   
       <!-- Sky -->
       <a-sky color="#ECECEC"></a-sky>

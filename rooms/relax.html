@@ -7,6 +7,19 @@
 </head>
 <body>
 <a-scene>
+
+    <!-- Sound -->
+    <a-sound src="../music/relaxing.mp3" autoplay="true" loop="true" volume=".09"></a-sound>
+    <a-sound src="../music/wind.mp3" autoplay="true" loop="true" volume=".03"></a-sound>
+
+      <a-camera >
+        <a-entity cursor="fuse: false"
+                  position="0 0 -1"
+                  geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                  material="color: white; shader: flat">
+        </a-entity>
+      </a-camera>
+
     <a-assests>
         <img id="sun" src="../images/sun.png"> </img>
         <a-asset-item id="terrain" src="../models/terrain.obj"></a-asset-item>
