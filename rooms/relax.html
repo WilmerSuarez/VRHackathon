@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+</head>
+<body>
+<a-scene>
+    <a-assests>
+        <img id="sun" src="../images/sun.png"> </img>
+        <a-asset-item id="terrain" src="../models/terrain.obj"></a-asset-item>
+        <a-asset-item id="terrain-mtl" src="../models/terrain.mtl"></a-asset-item>
+    </a-assests>
+
+    <a-plane src="#sun" rotation="0 133 0" scale="400 400 400" position="-301.694 0 257.788" material="transparent: true; shader:flat"></a-plane>
+    <a-camera position=""></a-camera>
+    <a-sky color="teal"></a-sky>
+    <a-entity light="color:#ffb648;intensity:0.6" position="-154.804 22.030 154.692" id="sun"></a-entity>
+    <a-entity light="type: ambient; color: #eef0a8; intensity: 0.6"></a-entity>
+    <a-entity obj-model="obj: #terrain" material="color:green" scale ="10 10 10" position="-64.423 -46.758 59.664"></a-entity>
+
+</a-scene>
+
+</body>
+</html>
